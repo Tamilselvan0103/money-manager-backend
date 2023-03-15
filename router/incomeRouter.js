@@ -10,7 +10,7 @@ const router = express.Router();
 
 //adding income data in cloud atlas
 
-router.post("/addIncome", async (req, res) => {
+router.post("/get/IncomeData", async (req, res) => {
   try {
     const newData = req.body;
     if (!newData) {
