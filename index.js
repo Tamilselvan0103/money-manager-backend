@@ -13,9 +13,9 @@ app.use(cors());
 app.use(express.json());
 //env configuration
 dotenv.config();
-app.get("/",(req,res)=>{
 
-    res.status(200).json({"i am working"})
+app.get("/",(req,res)=>{
+res.status(200).json({routes:"i am working"})
 })
 
 app.use("/", IncomeData);
