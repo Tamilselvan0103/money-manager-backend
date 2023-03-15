@@ -10,7 +10,7 @@ const router = express.Router();
 
 //adding expense data in cloud data
 
-router.post("/addexpense", async (req, res) => {
+router.post("/get/expensedata", async (req, res) => {
   try {
     const newData = req.body;
     if (!newData) {
